@@ -12,7 +12,7 @@ pipeline{
         }
          stage('Build') {
             steps {
-dir("C:/Users/lbhar/.jenkins/workspace/iamjustpie/devopsproject/"){
+dir("C:/Users/lbhar/.jenkins/workspace/ppyyline/devopsproject/"){
                 sh 'mvn -B -DskipTests clean package'
          }
          }
