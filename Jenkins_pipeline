@@ -2,7 +2,7 @@ pipeline{
     agent any
     
     environment{
-        PATH = "/opt/maven3/bin:$PATH"
+        PATH = "C:/Program Files/apache-maven-3.8.6/bin:$PATH"
     }
     stages{
         stage("Git Checkout"){
@@ -10,11 +10,20 @@ pipeline{
                git credentialsId: 'javajenkins', url: 'https://github.com/bharah08/devopsproject.git'
             }
         }
-        stage("Maven Build"){
-            steps{
-                sh "mvn clean package"
-                sh "mv target/*.war target/myweb.war"
-       }
-        }
-    }
+         stage('Build') {
+            steps {
+dir("C:/Users/lbhar/.jenkins/workspace/iamjustpie/devopsproject/"){
+                sh 'mvn -B -DskipTests clean package'
+         }
+         }
+         }
+     }
+    post {
+       always {
+          junit(
+        allowEmptyResults: true,
+        testResults: '*/test-reports/.xml'
+      )
+      }
+   } 
 }
