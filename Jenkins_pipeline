@@ -1,9 +1,5 @@
 pipeline{
     agent any
-    
-    environment{
-        PATH = "C:/Program Files/apache-maven-3.8.6/bin:$PATH"
-    }
     stages{
         stage("Git Checkout"){
             steps{
@@ -18,12 +14,3 @@ dir("C:/Users/lbhar/.jenkins/workspace/ppyyline/devopsproject/"){
          }
          }
      }
-    post {
-       always {
-          junit(
-        allowEmptyResults: true,
-        testResults: '*/test-reports/.xml'
-      )
-      }
-   } 
-}
