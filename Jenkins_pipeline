@@ -10,7 +10,7 @@ pipeline {
         stage('Initialize'){
             steps{
                 echo "PATH = ${MAVEN_HOME}/bin:${PATH}"
-                echo "MAVEN_HOME = C:\Program Files\apache-maven-3.8.6"
+                echo "MAVEN_HOME = C:/Program Files/apache-maven-3.8.6"
             }
         }
         stage('Build') {
