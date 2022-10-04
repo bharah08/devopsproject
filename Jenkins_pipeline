@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir("C:/Users/lbhar/.jenkins/workspace/maxx1"/devopsproject/") {
+                dir("C:/Users/lbhar/.jenkins/workspace/maxx1/devopsproject/") {
                 bat 'mvn -B -DskipTests clean package'
                 }
             
