@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        maven "MAVEN"
-        jdk "JDK"
-    }
-
     stages {
         stage('Initialize'){
             steps{
@@ -15,7 +10,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir("C:/Users/lbhar/.jenkins/workspace/maxx1/devopsproject/") {
+                dir("C:/Users/lbhar/.jenkins/workspace/oop/devopsproject/") {
                 bat 'mvn -B -DskipTests clean package'
                 }
             
