@@ -2,6 +2,6 @@ FROM tomcat:8.5.84
 
 LABEL maintainer="Devops"
 
-ADD ./target/webappExample.war C:\apache-tomcat-8\apache-tomcat-8.5.84\webapps
+ADD ./target/webappExample.war /usr/local/tomcat/webapps/
 
 EXPOSE 8081
