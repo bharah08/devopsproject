@@ -1,9 +1,9 @@
-FROM tomcat:latest
+FROM tomcat:8.5.84
 
-LABEL maintainer="Nidhi Gupta"
+LABEL maintainer="Devops"
 
-ADD ./target/LoginWebApp-1.war /usr/local/tomcat/webapps/
+ADD ./target/webappExample.war C:\apache-tomcat-8\apache-tomcat-8.5.84\webapps
 
-EXPOSE 8080
+EXPOSE 8081
 
 CMD ["catalina.sh", "run"]
