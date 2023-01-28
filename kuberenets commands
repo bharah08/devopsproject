@@ -4,6 +4,8 @@ kubectl get pods -n kube-system >>>>>>>>> find pods in particuler namespace
 kubectl delete pod first >>>>>>> delete the pod
 kubectl delete pods --all >>>>>> delete all the pods
 kubectl namespace create hello >>>>>> create the namespace
+kubectl config set-context myspace --namespace=myspace --user=kubernets-admin --cluster=kubernets  >>>>>> set  permisions to the namespace
+kubectl config set-context –current –namespace=myspace  >>>>>. set defult namespace which created
 kubectl get pods -o wide >>>>>>> it displays the information about pods
 kubectl get node -o wide >>>>>>> it displays the information about nodes
 kubectl run first --image=nginx >>>>>> it creats the pod by command
