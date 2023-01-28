@@ -1,0 +1,11 @@
+kubectl port-forward --address 0.0.0.0 first 8888:80 >>>>>>> port maping
+kubectl get ns >>>>>>>> namespace list
+kubectl get pods -n kube-system >>>>>>>>> find pods in particuler namespace
+kubectl delete pod first >>>>>>> delete the pod
+kubectl delete pods --all >>>>>> delete all the pods
+kubectl namespace create hello >>>>>> create the namespace
+kubectl get pods -o wide >>>>>>> it displays the information about pods
+kubectl get node -o wide >>>>>>> it displays the information about nodes
+kubectl run first --image=nginx >>>>>> it creats the pod by command
+kubectl taint nodes desktop-od7ikfq node-role.kubernetes.io/control-plane:NoSchedule- >>>>>> remove the taint from master
+kubectl apply -f k8s.yaml >>>>>it creats the pod by manifestfile
