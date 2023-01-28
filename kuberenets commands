@@ -11,3 +11,5 @@ kubectl get node -o wide >>>>>>> it displays the information about nodes
 kubectl run first --image=nginx >>>>>> it creats the pod by command
 kubectl taint nodes desktop-od7ikfq node-role.kubernetes.io/control-plane:NoSchedule- >>>>>> remove the taint from master
 kubectl apply -f k8s.yaml >>>>>it creats the pod by manifestfile
+kubectl get pods --all-namespaces >>>>>>> it shows all namespaces
+kubectl get quota -n namespace (name) >>>>> it shows the ressource quota
