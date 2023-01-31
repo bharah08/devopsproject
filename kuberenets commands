@@ -13,3 +13,4 @@ kubectl taint nodes desktop-od7ikfq node-role.kubernetes.io/control-plane:NoSche
 kubectl apply -f k8s.yaml >>>>>it creats the pod by manifestfile
 kubectl get pods --all-namespaces >>>>>>> it shows all namespaces
 kubectl get quota -n namespace (name) >>>>> it shows the ressource quota
+kubectl create label node (node name) node=node name >>>>> creating label
