@@ -15,3 +15,11 @@ kubectl get pods --all-namespaces >>>>>>> it shows all namespaces
 kubectl get quota -n namespace (name) >>>>> it shows the ressource quota
 kubectl label node (node name) node=node name >>>>> creating label
 kubectl get nodes --show-labels >>>> to show labels
+kubectl expose deployment web-app --type=ClusterIp --port=80  (communication b/w pods using cluster ip)
+kubectl expose deployment web-app --type=NodePort --port=80  (communication b/w pods using Nodeport)
+multi containers in single pod >>>>>>> to communicate two containers in pod >>>>
+      kubectl exec -it podname -c (container name) -- /bin/bash
+      apt update
+      apt install net-tools -y
+      netstat -tulp
+      
