@@ -34,3 +34,11 @@ kubectl edit namesapce (namespace name)
 add line under metadata
 annotations:
   scheduler.alpha.kubernetes.io/node-selector: node=worker-2
+---------------------------------------------
+
+creating service for deployment by command :--
+kubectl expose deployment (deployment name) --name (deployment)-svc
+
+----------------------------------
+to check the k8s logs >>> 
+kubectl logs (podname) -c (container name)
