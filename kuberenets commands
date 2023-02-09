@@ -29,3 +29,8 @@ if you want namespace bind with particuler label
 cd /etc/kubernetes/manifests
 vi kube-apiserver.yaml
 --enable-admission-plugins=NodeRestriction,PodNodeSelector  <<<<< add that line
+after that edit the namespace
+kubectl edit namesapce (namespace name)
+add line under metadata
+annotations:
+  scheduler.alpha.kubernetes.io/node-selector: node=worker-2
