@@ -24,3 +24,8 @@ multi containers in single pod >>>>>>> to communicate two containers in pod >>>>
       netstat -tulp
       
 kubectl logs -f (pod name) -c (container name) >>>>> checking logs of containers
+
+if you want namespace bind with particuler label
+cd /etc/kubernetes/manifests
+vi kube-apiserver.yaml
+--enable-admission-plugins=NodeRestriction,PodNodeSelector  <<<<< add that line
