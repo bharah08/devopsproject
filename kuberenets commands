@@ -42,3 +42,10 @@ kubectl expose deployment (deployment name) --name (deployment)-svc
 ----------------------------------
 to check the k8s logs >>> 
 kubectl logs (podname) -c (container name)
+
+
+
+---------------------------------------------------------------
+
+node port range:--
+30000 to 32767
