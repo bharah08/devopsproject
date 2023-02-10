@@ -49,3 +49,12 @@ kubectl logs (podname) -c (container name)
 
 node port range:--
 30000 to 32767
+
+------------------------------
+
+rollback command to previous version
+
+kubectl rollback undo deployment (deployment name)
+
+
+
