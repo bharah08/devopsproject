@@ -2,8 +2,8 @@ git branch (branch name) >>>>> it creats new branch
 git checkout (branch name0 >>>>> it switches to another branch
 git checkout < commit id> it shows you contente or old chnages 
 git log >>> it shows all
-git log --onlne >>> it shows short commit id
-git log --online -1 >>> it shows first commit id
+git log --oneline >>> it shows short commit id
+git log --oneline -1 >>> it shows first commit id
 ----------------------
 
 git reset:--
