@@ -1,0 +1,19 @@
+creating multiple instances with variable:---
+
+provider "aws" {
+  region     = "ap-south-1"
+  access_key = "AKIAR2B2OXCVG3N2CACC"
+  secret_key = "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"
+}
+variable "instance" {
+type= list
+default= ["one","two","three"]
+}
+resource "aws_instance" "web" {
+  ami           = "ami-0e742cca61fb65051"
+  instance_type = "t3.micro"
+count=3
+  tags = {
+    Name = var.instance[count.index]
+  }
+}
