@@ -68,3 +68,17 @@ resource "aws_ebs_volume" "example" {
   size              = 10
   tags = local.common_tag
 }
+
+-----------------------------------------------------------
+
+terraform output values:---
+
+
+
+
+
+
+
+
+
+
