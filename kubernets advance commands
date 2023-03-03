@@ -1,0 +1,6 @@
+k8s trobuleshoot pods:-
+to edit the pod:-
+kubectl edit pod (podname)
+
+way -----------
+kubectl get pods (podname) -o yaml
