@@ -4,3 +4,19 @@ kubectl edit pod (podname)
 
 way -----------
 kubectl get pods (podname) -o yaml
+------------
+
+
+kubernets deployment roolback commands:-
+
+kubectl rollout undo deployment (deploymentname)
+
+
+how to pause deployment without affecting to deployment:--
+
+
+kubectl rollout pause deployment (deploymentname)
+
+how to resume deployment:-
+
+kubectl rollout resume deployment (deploymentname)
