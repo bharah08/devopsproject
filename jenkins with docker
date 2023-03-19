@@ -1,0 +1,2 @@
+when docker cant build image in jenkins file
+give >>> in ec2 where docker instlled >> sudo usermod -ag docker jenkins
