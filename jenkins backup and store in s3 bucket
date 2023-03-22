@@ -1,6 +1,6 @@
 first to take backup of jenkins>>
 
-$ tar -zcvf jenkins-backup.tar.gz var/lib/jenkins/
+$ tar -zcvf jenkins-backup.tar.gz /var/lib/jenkins/
 next create iam role with full access s3 storage and attech to jenkins instance
 
 store to s3bucket which we copied
