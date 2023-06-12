@@ -14,5 +14,10 @@ tools{
                 sh 'mvn clean install'
             }
         }
+        stage('artifact s3'){
+            steps{
+                sh 'aws s3 cp ${WORKSPACE}/target/*.war s3://mybuk.con' 
+            }
+    }
     }
 }
